@@ -1,8 +1,9 @@
 import { Schema, model } from 'mongoose';
 const userSchema = new Schema({
     Title: {
-      type: String
+      type: String,
       required: true
+
     },
     Descreption: {
       type: String,

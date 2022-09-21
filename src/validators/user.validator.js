@@ -18,8 +18,8 @@ export const newUserValidator = (req, res, next) => {
 export const newNoteValidator = (req, res, next) => {
   const schema = Joi.object({
     Title: Joi.string().min(6).required(),
-    Descreption: Joi.string().min().required(),
-    color: Joi.string().min().optional()
+    Descreption: Joi.string().required(),
+    color: Joi.string().optional()
   });
   const { error, value } = schema.validate(req.body);
   if (error) {

@@ -32,8 +32,8 @@ export const userLogin = async (body) => {
         },
         process.env.SECRET_KEY
       );
-      return token;
       console.log('login successfully');
+      return token;
     } else {
       throw new Error('passwrd incorrect');
     }

@@ -2,7 +2,8 @@ import express from 'express';
 const router = express.Router();
 
 import userRoute from './user.route';
-import Note from '.routes/note.route';
+import Note from './note.route';
+
 /**
  * Function contains Application routes
  *
