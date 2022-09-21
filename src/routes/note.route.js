@@ -7,7 +7,7 @@ const router = express.Router();
 
 //route to create new note
 router.post('/note', newNoteValidator, userAuth, noteController.newNote);
-// route to create getall note
+// route to create get note
 router.get('/:_id', newNoteValidator, userAuth, noteController.getNote);
 //route to create update note
 router.put('/:_id', newNoteValidator, userAuth, noteController.updateNote);
